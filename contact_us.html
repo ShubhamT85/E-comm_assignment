@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us!</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        header {
+            background-color: aqua;
+            color: lightslategray;
+            text-align: center;
+            padding: 20px;
+        }
+
+        body {
+        background-image: url(https://globetrender.com/wp-content/uploads/2020/05/Caribbean-beach.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+        h2 {
+            height: 40px;
+            font-size: x-large;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h4 {
+            padding: 10px;
+            font-size: medium;
+            font-weight: bolder;
+            color: saddlebrown;
+        }
+
+        h4:hover {
+            color: burlywood;
+            background-color: whitesmoke;
+        }
+
+        h5 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 15px;
+            color: darkslategrey;
+        }
+
+        .content {
+            padding: 5px;
+            text-align: center;
+            width: 50%;
+            display: block;
+            background-color: darkslategrey;
+            border-radius: 10%;
+        }
+
+        div {
+            text-align: center;
+            display: inline-block;
+            width: 30%;
+            margin: auto;
+        }
+
+        .center {
+            display: block;
+            margin: auto;
+        }
+
+        input[type=text], [type=email] {
+            width: 75%;
+            padding: 5px;
+        }
+
+        textarea {
+        width: 75%;
+        padding: 5px;
+        border-radius: 5px;
+        height: 150px;
+        }
+
+        button {
+            padding: 8px;
+            border-radius: 15px 0px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: aquamarine;
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="home.html">
+                <h2 >Dummy Site</h2>
+            </a>
+            <div>
+                <a href="home.html">
+                    <h4>Home</h4>
+                </a>
+            </div>
+            <div>
+                <a href="listing.html">
+                    <h4>Listing</h4>
+                </a>
+            </div>
+            <div>
+                <a href="contact_us.html">
+                    <h4>Contact Us</h4>
+                </a>
+            </div>
+        </nav>
+    </header>    
+<br>
+<br>
+    <div class="content">
+        <h5>Contact Us!</h5>
+    
+
+        <form>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <br><br>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <br><br>
+        </form>
+        <textarea name="message" id="message" placeholder="Message" rows="4" cols="25"></textarea>
+        <br>
+        <br>
+        <button class="form_button" type="submit">Send Message</button>
+        </div>
+
+<br>
+<br>
+<center>
+    <footer>
+        <p>Copyright &copy; 1999-2021</p>
+    </footer>
+</center>
+
+
+
+    
+    <script>
+        $(document).ready(function () {
+    $('.form_button').click(function () {
+                if ($('#name').val() == '') {
+                    alert('Name can not be left blank');
+                }
+                else if ($('#email').val() == '') {
+                    alert('Email can not be left blank');
+                }
+                else if ($('#message').val() == '') {
+                    alert('Message can not be left blank');
+                }
+                else {
+                    alert('Submission Successful');
+                }
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
